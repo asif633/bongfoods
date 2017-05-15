@@ -1,0 +1,29 @@
+<nav class="uk-navbar-container" uk-navbar>
+  <div class="uk-navbar-left">
+    <a class="uk-navbar-item uk-logo" routerLink="/">Logo</a>
+    <ul class="uk-navbar-nav">
+      <li class="uk-active"><a href="#">Active</a></li>
+      <li>
+        <a href="#">Choose</a>
+        <div class="uk-navbar-dropdown">
+          <ul class="uk-nav uk-navbar-dropdown-nav">
+            <li><a routerLink="/beforeorder">Before Order</a></li>
+            <li><a routerLink="/cityarea">Manage City</a></li>
+            <li><a routerLink="/menurelated">Manage Menu</a></li>
+            <li><a routerLink="/timeslot">Manage Timeslot</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Item</a></li>
+    </ul>
+  </div>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav">
+      <li><a class="uk-button-text" routerLink="/menu">Menu</a></li>
+      <li><a class="uk-button-text" routerLink="/franchise">Become Franchise</a></li>
+      <li><a class="uk-button-text" routerLink="/sign">Sign In</a></li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

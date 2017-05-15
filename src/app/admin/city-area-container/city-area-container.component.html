@@ -1,0 +1,31 @@
+<div class="uk-container">
+<div class="uk-child-width-expand@s" uk-grid>
+  <div class="uk-width-1-1@m">
+    <div class="uk-box-shadow-small uk-padding uk-margin-top uk-margin-bottom">
+      <div>
+        <ul class="uk-flex-center" uk-tab="connect: #signtab; animation: uk-animation-slide-right-medium">
+          <li>
+            <a href="#">City</a>
+          </li>
+          <li>
+            <a href="#">Area</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="uk-switcher uk-margin" id="signtab">
+        <li>
+          <div class="uk-child-width-1-2@m" uk-grid>
+            <app-cities-table></app-cities-table>
+            <app-city-form></app-city-form>
+          </div>
+        </li>
+        <li>
+          <div class="uk-child-width-1-2@m" uk-grid>
+            <app-areas-table></app-areas-table>
+            <app-area-form></app-area-form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
